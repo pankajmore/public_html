@@ -1,0 +1,55 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>Assignment 1</title>
+	
+</head>
+<body background="stockvault-leaves109588.jpg">
+<script type="text/javascript" src="clock.js"></script>
+<canvas id="myClock" width="300" height="300">[No canvas support]</canvas>
+<script type="text/javascript">
+    window.onload = function ()
+    {
+        var clock = new Clock('myClock');
+    
+        // All these default to true anyway
+        clock.Set('clock.digital', false);
+        clock.Set('clock.numbers', true);
+        clock.Set('clock.background', false);
+    
+        DrawClock = function ()
+        {
+            clock.Draw();
+                
+            // The timer which redraws the clock ten times per second,
+        // (doing so helps prevent slight timing oddities)
+            setTimeout(DrawClock, 100);
+        }
+    
+        DrawClock();
+    }
+</script>
+<a href="http://freehitcountercode.com/"><img border="0" src="http://www.freehitcountercode.com/counter.php?b=ffffff&r=000000&f=000000&unique=0&start=397" width="120" height="30" /></a><br /><span style="font-size: 5%;"><a href="http://freehitcountercode.com/">free website hit counter code</a></span>
+
+<script type="text/javascript" src="jquery.js"></script>
+
+Hi! I am Pankaj More </br>
+This website is built for Assignment 1,CS355(Programming Tools and Techniques)<br/>
+Background Image edited using gimp.
+
+
+
+
+
+
+
+
+<hr/>
+<!--href tag is used for hyperlinks--!>
+<a href="http://home.iitk.ac.in/~pankajm/">My home page</a>	
+<a href="contact.html">Contact Me</a>
+<a href="videos.html">Videos</a>
+<a href="links.html">Links</a>
+</body>
+</html>
